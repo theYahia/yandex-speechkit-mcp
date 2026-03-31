@@ -1,12 +1,18 @@
 {
   "name": "@theyahia/yandex-speechkit-mcp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "MCP server for Yandex SpeechKit API — speech recognition, synthesis, and voice listing. 5 tools.",
   "type": "module",
   "main": "dist/index.js",
-  "bin": { "yandex-speechkit-mcp": "dist/index.js" },
-  "files": ["dist"],
-  "engines": { "node": ">=18.0.0" },
+  "bin": {
+    "yandex-speechkit-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
@@ -27,11 +33,29 @@
     "typescript": "^5.7.0",
     "vitest": "^3.0.0"
   },
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "mcpName": "io.github.theYahia/yandex-speechkit-mcp",
-  "keywords": ["mcp", "mcp-server", "model-context-protocol", "claude", "ai", "russian-api", "yandex", "speechkit", "speech", "tts", "stt", "voices"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "russian-api",
+    "yandex",
+    "speechkit",
+    "speech",
+    "tts",
+    "stt",
+    "voices"
+  ],
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/theYahia/yandex-speechkit-mcp.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theYahia/yandex-speechkit-mcp.git"
+  },
   "homepage": "https://github.com/theYahia/yandex-speechkit-mcp#readme",
   "author": "Yahia"
 }
