@@ -1,7 +1,7 @@
 {
   "name": "@theyahia/yandex-speechkit-mcp",
   "version": "1.1.0",
-  "description": "MCP server for Yandex SpeechKit API — speech recognition, synthesis, and voice listing. 5 tools.",
+  "description": "MCP server for Yandex SpeechKit — speech recognition and synthesis (Russia)",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
@@ -49,7 +49,10 @@
     "speech",
     "tts",
     "stt",
-    "voices"
+    "voices",
+    "yandex-speechkit",
+    "api",
+    "typescript"
   ],
   "license": "MIT",
   "repository": {
