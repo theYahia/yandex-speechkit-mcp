@@ -2,9 +2,9 @@ import { z } from "zod";
 import { recognizeSpeech } from "../client.js";
 
 export const recognizeSchema = z.object({
-  audio_base64: z.string().describe("Аудиоданные в формате Base64"),
-  lang: z.string().default("ru-RU").describe("Язык распознавания (ru-RU, en-US, tr-TR)"),
-  format: z.string().default("oggopus").describe("Формат аудио (oggopus, lpcm)"),
+  audio_base64: z.string().describe("Audio data encoded as Base64"),
+  lang: z.string().default("ru-RU").describe("Recognition language (ru-RU, en-US, tr-TR, kk-KK)"),
+  format: z.string().default("oggopus").describe("Audio format (oggopus, lpcm)"),
 });
 
 export async function handleRecognize(params: z.infer<typeof recognizeSchema>): Promise<string> {
